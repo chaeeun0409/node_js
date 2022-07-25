@@ -2,7 +2,7 @@
 console.time("mirim");
 let output = 0;
 
-for(let i = 0; i<100; i++){
+for(let i = 0; i<1000; i++){
     output += i;
 }
 process.exit(); //프로그램 종료
