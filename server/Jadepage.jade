@@ -1,8 +1,24 @@
+//- html 
+//-     head 
+//-         title Index Page    
+//-     body    
+//-         h1 Hello jade .!
+//-         h2 Lorem ipsum 
+//-         hr
+//-         a(href="https://www.e-mirim.hs.kr/main.do", data-test="multiple Attribute")미림여자정보과학고
+
+doctype html
 html 
     head 
-        title Index Page    
-    body    
-        h1 Hello jade .!
-        h2 Lorem ipsum 
+        title Index Page 
+    body 
+        //JADE String
+        h3 #{name}..!
+        h2= description 
         hr
-        a(href="https://www.e-mirim.hs.kr/main.do", data-test="multiple Attribute")미림여자정보과학고
+        
+        //여기서부터 자바스크립트
+        -for ( var i =0; i<10; i++){
+            p 
+            a(href="https://www.e-mirim.hs.kr/main.do", data-test="multiple Attribute")미림여자정보과학고 #{i}
+        -}
